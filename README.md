@@ -1,24 +1,8 @@
-# vue-mixins-demo
+# Vue mixins Demo
 
-## Project setup
-```
-yarn install
-```
+- [Vue mixins Demo](#vue-mixins-demo)
+  - [Deployment](#deployment)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Deployment
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Checkout deployment at <https://gagandeep39.github.io/vue-mixins-demo/>
