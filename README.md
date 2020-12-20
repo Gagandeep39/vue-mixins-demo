@@ -6,6 +6,7 @@
   - [Mixins](#mixins)
   - [Multiple Mixins](#multiple-mixins)
   - [Global Mixins](#global-mixins)
+  - [Disadvantages of Mixins](#disadvantages-of-mixins)
 
 ## Deployment
 
@@ -86,3 +87,9 @@ createApp(App)
   .mixin(loggerMixin)
   .mount('#app');
 ```
+
+## Disadvantages of Mixins
+
+- Makes it difficult to read code (Reduces readability)
+- Difficult to understand where thedata is coming from
+- Must be avoided if not really necessary
