@@ -1,5 +1,8 @@
 import { createApp } from 'vue';
 
 import App from './App.vue';
+import loggerMixin from './mixins/logger';
 
-createApp(App).mount('#app');
+createApp(App)
+  .mixin(loggerMixin)
+  .mount('#app');

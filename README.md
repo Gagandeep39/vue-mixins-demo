@@ -4,6 +4,8 @@
   - [Deployment](#deployment)
   - [Reusability](#reusability)
   - [Mixins](#mixins)
+  - [Multiple Mixins](#multiple-mixins)
+  - [Global Mixins](#global-mixins)
 
 ## Deployment
 
@@ -52,4 +54,35 @@ import alertMixin from '../mixins/alert';
 export default {
   mixins: [alertMixin],
 };
+```
+
+## Multiple Mixins
+
+- We can use half code from mixin, and other from inside component
+- At runtime, component and mixin data are merged together
+- If mixing and component have same data, **Components have higher priority**
+- In case of lifeccle hooks, mixins will execute first, followed by component hooks
+
+## Global Mixins
+
+- Limited usecase
+- Can be used for logging
+- Can be used in all components
+- Not required to be imported
+
+```js
+export default {
+  mounted() {
+    console.log('Logger Mixin - Mounted hook');
+  },
+};
+```
+
+```js
+// Registering in root fil
+import loggerMixin from './mixins/logger';
+
+createApp(App)
+  .mixin(loggerMixin)
+  .mount('#app');
 ```
